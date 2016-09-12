@@ -9,3 +9,5 @@ Authors and Contributors
 * Laurel H. Carney
 * Jörg Encke
 * Kenji Noguchi
+* Stefan Strahl <stefan.strahl@medel.com>
+

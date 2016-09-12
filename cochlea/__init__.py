@@ -31,6 +31,7 @@ from cochlea.holmberg2007 import run_holmberg2007
 from cochlea.holmberg2007 import run_holmberg2007_vesicles
 from cochlea.zilany2014 import run_zilany2014
 from cochlea.zilany2014 import run_zilany2014_rate
+from cochlea.goldwyn2012 import run_goldwyn2012
 
 
 from cochlea.holmberg2007 import real_freq_map as freq_map_holmberg2007
@@ -66,7 +67,7 @@ def set_dbspl(signal, dbspl):
     p0 = 20e-6
     rms = np.sqrt(np.sum(signal**2) / signal.size)
 
-    scalled = signal * 10**(dbspl/20) * p0 / rms
+    scalled = signal * 10**(dbspl / 20) * p0 / rms
 
     return scalled
 
@@ -77,7 +78,7 @@ def set_dba_isolet(signal, dba):
     # value from miclib (precalculated for all ISOLET files)
     rms_dba = 0.02972401089
 
-    scaled = signal * 10**(dba/20) * p0 / rms_dba
+    scaled = signal * 10**(dba / 20) * p0 / rms_dba
 
     return scaled
 

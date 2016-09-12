@@ -76,6 +76,9 @@ Implemented Models
 - `MATLAB Auditory Periphery`_ by Meddis et al. (external model, not
   implemented in the package, but easily accessible through
   matlab_wrapper_).
+- JH Goldwyn, JT Rubinstein, E Shea-Brown (2012). A point process
+  framework for modeling electrical stimulation of the auditory nerve.
+  J Neurophysiol 108:1430-1452, 2012 
 
 
 .. _`MATLAB Auditory Periphery`: http://www.essexpsychology.macmate.me/HearingLab/modelling.html
