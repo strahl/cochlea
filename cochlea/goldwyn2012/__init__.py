@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 from . import goldwyn2012
 
 
@@ -59,7 +60,7 @@ def run_goldwyn2012(t, signal, pulserate, seed, threshold=0.852, relative_spread
     assert signal.ndim == 1
     np.random.seed(seed)
 
-    model = Goldwyn2012()
+    model = goldwyn2012.Goldwyn2012()
     model.init_neuron(threshold=0.852, relative_spread=0.0487, chronaxie=276, tau_sum=250, jitter=85.5, abs_ref=332,
                       rel_ref=411, abs_relative_spread=199.0, rel_relative_spread=423.0, threshold_phase_duration=40)
     spikes = model.simulate(t, signal, pulserate)
