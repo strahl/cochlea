@@ -10,6 +10,7 @@ from . rate_level import calc_rate_level
 from . synchronization import calc_synchronization
 from . modulation_gain import calc_modulation_gain
 from . tuning import calc_tuning
+from . psychophysical_performance_limit import calc_psychophysical_performance_limit
 
 
 def calc_human_hearing_thresholds(freqs):
