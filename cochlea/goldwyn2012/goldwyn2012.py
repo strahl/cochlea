@@ -21,7 +21,7 @@ def printProgress(iteration, total, prefix='', suffix='', decimals=1, barLength=
     formatStr = "{0:." + str(decimals) + "f}"
     percents = formatStr.format(100 * (iteration / float(total)))
     filledLength = int(round(barLength * iteration / float(total)))
-    bar = '█' * filledLength + '-' * (barLength - filledLength)
+    bar = u'\u2588' * filledLength + '-' * (barLength - filledLength)
     sys.stdout.write('\r%s |%s| %s%s %s' %
                      (prefix, bar, percents, '%', suffix)),
     sys.stdout.flush()
@@ -273,11 +273,11 @@ class Goldwyn2012(object):
         == Neural parameters ==
         threshold (mA) default: 0.852
         relative_spread
-        chronaxie (µs) default: 276
-        tau_sum (µs) default: 250  # summation time constant
-        jitter (µs) default: 85.5
-        abs_ref (µs) default: 332
-        rel_ref (µs) default: 411  # Time scale of relative refractory period
+        chronaxie (us) default: 276
+        tau_sum (us) default: 250  # summation time constant
+        jitter (us) default: 85.5
+        abs_ref (us) default: 332
+        rel_ref (us) default: 411  # Time scale of relative refractory period
         abs_relative_spread default: 199.0
         rel_relative_spread default: 424.0
         # Phase duration used for stimulation that defines threshold

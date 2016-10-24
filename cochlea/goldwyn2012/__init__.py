@@ -28,15 +28,15 @@ def run_goldwyn2012(t, signal, pulserate, seed, threshold=0.852, relative_spread
     relative_spread : float
         default: 0.0487
     chronaxie : float
-        (µs) default: 276
+        (us) default: 276
     tau_sum : float
-        (µs) default: 250  # summation time constant
+        (us) de fault: 250  # summation time constant
     jitter : float
-        (µs) default: 85.5
+        (us) default: 85.5
     abs_ref : float
-        (µs) default: 332
+        (us) default: 332
     rel_ref : float
-        (µs) default: 411  # Time scale of relative refractory period
+        (us) default: 411  # Time scale of relative refractory period
     abs_relative_spread : float
         default: 199.0
     rel_relative_spread : float
